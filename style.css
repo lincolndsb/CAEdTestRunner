@@ -1,0 +1,241 @@
+body{
+    position: relative;
+    font-size: 14px;
+    padding-top: 65px;
+}
+
+a{
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+header .navbar{
+    border-bottom: 1px solid #f3f3f4;
+    background-color: #fff;
+    min-height: 65px;
+    z-index: 99;
+}
+
+header .navbar-brand{
+    color: #000;
+}
+
+header .navbar-nav .nav-link{
+    color: #000;
+    font-size: .9rem;
+    padding-right: 30px !important;
+}
+
+header .btn-primary{
+    background-color: #ffff00;
+    border-color: #ffff00;
+    color: #000;
+    font-size: .9rem;
+    padding: 10px 20px;
+}
+
+header .btn-primary:hover{
+    background-color: #fff;
+    border-color: #000;
+    color: #000;
+}
+
+#main{
+    padding: 15px 0;
+}
+
+#breadcrumb .breadcrumb{
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+#breadcrumb .breadcrumb a{
+    font-size: .9em;
+    color: #71767a;
+}
+
+#breadcrumb .breadcrumb-item.active{
+    color: #000;
+}
+
+#timeline{
+    margin: 30px 0;
+}
+
+#timeline h2{
+    margin: 0;
+    font-size: 1rem;
+}
+
+#timeline .btn-default{
+    margin-right: 15px;
+    background-color: transparent;
+}
+
+#timeline .btn-default:hover{
+    background-color: #f3f3f4;
+}
+
+#timeline .progress{
+    margin: 15px 0 0;
+    height: 3px;
+    border-radius: 0;
+}
+
+#timeline .progress .bg-success{
+    background-color: #8dee8d !important;
+}
+
+#question p{
+    font-weight: bold;
+}
+
+#question figure{
+    margin: 15px 0;
+}
+
+#question figcaption{
+    color: #71767a;
+}
+
+#question .answers .form-check{
+    background-color: #f3f3f4;  
+    position: relative;
+    display: block;
+    margin-top: 1rem;
+    padding: 0;
+    border-radius: 5px;
+}
+
+#question .answers .form-check-label{
+    padding: 15px 15px 15px 60px;
+    width: 100%;
+    display: block;
+    text-align: left;
+    color: #3C454C;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 200ms ease-in;
+    overflow: hidden;
+    border: 1px solid transparent;
+    border-radius: 5px;    
+}
+
+#question .answers .form-check-label:before{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    content: '';
+    background-color: #ffffe6;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale3d(1, 1, 1);
+    transition: all 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    opacity: 0;
+    z-index: -1;
+}
+
+#question .answers .form-check-label:after{
+    content: '';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #D1D7DC;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: 2px 3px;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+#question .answers .form-check:nth-child(1) .form-check-label:after{
+    content: 'A';
+}
+
+#question .answers .form-check:nth-child(2) .form-check-label:after{
+    content: 'B';
+}
+
+#question .answers .form-check:nth-child(3) .form-check-label:after{
+    content: 'C';
+}
+
+#question .answers .form-check:nth-child(4) .form-check-label:after{
+    content: 'D';
+}
+
+#question .answers .form-check-input{
+    width: 30px;
+    height: 30px;
+    order: 1;
+    z-index: 2;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    visibility: hidden;
+    margin: 0;
+}
+
+#question .answers .form-check-input:checked ~ label{
+    color: #000;
+    border-color: #dfe1e2;
+}
+
+#question .answers .form-check-input:checked ~ label:before{
+    transform: translate(-50%, -50%) scale3d(75, 75, 1);
+    opacity: 1;
+}
+
+#question .answers .form-check-input:checked ~ label:after{
+    background-color: #ffff00;
+    border-color: #565c65;
+}
+
+#question .review{
+    margin: 15px 0;
+}
+
+#controls .btn-default{
+    background-color: #fff;
+}
+
+#controls .btn-default.menu{
+    border: 1px solid #dfe1e2;
+    min-width: 140px;
+}
+#controls .btn-default.menu i{
+    color: #565c65;
+    font-size: .9rem;
+    margin-left: 15px;
+}
+
+#controls .btn-default:hover{
+    background-color: #f3f3f4;
+}
+
+footer{
+    padding: 15px 0;
+    border-top: 1px solid #f3f3f4;
+}
+
+footer .suport{
+    display: block;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    cursor: pointer;
+}
