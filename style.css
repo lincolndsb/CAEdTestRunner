@@ -41,7 +41,122 @@ header .btn-primary:hover{
 }
 
 #main{
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#test{
+    width: 100%;
     padding: 15px 0;
+    min-height: 100vh;
+    transition: all 0.3s;    
+}
+
+#sidebar{
+    min-width: 360px;
+    max-width: 360px;
+    background: #fff;
+    transition: all 0.3s;
+    border-right: 1px solid #f3f3f4;
+    padding: 15px;
+    color: #71767a;
+}
+
+#sidebar.active{
+    margin-left: -360px;
+}
+
+#sidebar h2{
+    margin: 0 0 5px;
+    font-size: 1rem;
+    color: #a9aeb1;
+}
+
+#sidebar h3{
+    margin: 0 0 5px;
+    font-size: 1rem;
+    color: #a9aeb1;
+}
+
+.infos{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#sidebar .infos label{
+    display: block;
+    margin: 0;
+}
+
+#sidebar .infos #time{
+    display: inline-block;
+    color: #a9aeb1;
+    font-weight: bold;
+}
+
+#sidebar .infos #percentage{
+    display: inline-block;
+    color: #a9aeb1;
+    font-weight: bold;
+}
+
+#sidebar .form-check{
+    margin-top: 15px;
+}
+
+#sidebar .form-check label{
+    display: flex;
+    justify-content: space-between;    
+    position: relative;
+    padding-left: 15px;
+}
+
+#sidebar .form-check .count{
+    font-weight: bold;
+    color: #a9aeb1;
+}
+
+#sidebar .form-check label:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 8px;
+    height: 8px;
+    background-color: #a9aeb1;
+    border-radius: 50%;
+}
+
+#sidebar .form-check.answeredcheck label:before{
+    background-color: #8dee8d;
+}
+
+#sidebar .form-check.reviewcheck label:before{
+    background-color: #ee8bd0;
+}
+
+#sidebar .form-check.unansweredcheck label:before{
+    background-color: #dfe1e2;
+}
+
+#sidebar .questions{
+    margin-top: 30px;
+}
+
+#sidebar .questions .number{
+    border: 1px solid #a9aeb1;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 #breadcrumb .breadcrumb{
