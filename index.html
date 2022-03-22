@@ -32,7 +32,8 @@
         </nav>
     </header>
     <section id="main">
-        <nav id="sidebar">
+        <nav id="sidebar" class="sticky-top">
+            <div class="close sidebarCollapse"><i class="fas fa-times"></i></div>
             <h2>Língua Portuguesa e Matemática</h2>
             <h3>6º ano do Ensino Fundamental</h3>
             <div class="row infos">
@@ -46,30 +47,41 @@
                 </div>
             </div>
             <h3>Lista de atividades</h3>  
-            <div class="form-check answeredcheck">
-                <input class="form-check-input" type="checkbox" value="true" id="answeredcheck">
-                <label class="form-check-label" for="answeredcheck">Respondidas<span class="count">0</span></label>
-            </div> 
-            <div class="form-check reviewcheck">
-                <input class="form-check-input" type="checkbox" value="true" id="reviewcheck">
-                <label class="form-check-label" for="reviewcheck">Revisar<span class="count">0</span></label>
-            </div> 
-            <div class="form-check unansweredcheck">
-                <input class="form-check-input" type="checkbox" value="true" id="unansweredcheck">
-                <label class="form-check-label" for="unansweredcheck">Não respondidas<span class="count">0</span></label>
-            </div>
-            <div class="questions">
-                <span class="number">1</span>
-                <span class="number">2</span>
-                <span class="number">3</span>
-                <span class="number">4</span>
-                <span class="number">5</span>
-                <span class="number">6</span>
-                <span class="number">7</span>
-                <span class="number">8</span>
-                <span class="number">9</span>
-                <span class="number">10</span>
-            </div>                                            
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="true" id="answeredcheck">
+                        <label class="form-check-label" for="answeredcheck">Respondidas</label>
+                    </div>
+                    <span class="badge badge-primary badge-pill">0</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="true" id="reviewcheck">
+                        <label class="form-check-label" for="reviewcheck">Revisar</label>
+                    </div>
+                    <span class="badge badge-primary badge-pill">0</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="true" id="unansweredcheck">
+                        <label class="form-check-label" for="unansweredcheck">Não respondidas</label>
+                    </div>
+                    <span class="badge badge-primary badge-pill">0</span>
+                </li>
+            </ul>            
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a class="nav-link active" href="#">01</a></li>
+                <li class="nav-item"><a class="nav-link check" href="#">02</a></li>
+                <li class="nav-item"><a class="nav-link review" href="#">03</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">04</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">05</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">06</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">07</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">08</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">09</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">10</a></li>
+            </ul>
         </nav>    
         <div id="test">   
             <div class="container">
@@ -95,7 +107,7 @@
                                 </div>                        
                             </div>
                             <div class="progress">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>                    
                         </section>
                         <section id="question">

@@ -13,7 +13,7 @@ header .navbar{
     border-bottom: 1px solid #f3f3f4;
     background-color: #fff;
     min-height: 65px;
-    z-index: 99;
+    z-index: 9999;
 }
 
 header .navbar-brand{
@@ -56,6 +56,8 @@ header .btn-primary:hover{
 #sidebar{
     min-width: 360px;
     max-width: 360px;
+    max-height: 100vh;
+    top: 65px;
     background: #fff;
     transition: all 0.3s;
     border-right: 1px solid #f3f3f4;
@@ -74,7 +76,7 @@ header .btn-primary:hover{
 }
 
 #sidebar h3{
-    margin: 0 0 5px;
+    margin: 0;
     font-size: 1rem;
     color: #a9aeb1;
 }
@@ -82,6 +84,11 @@ header .btn-primary:hover{
 .infos{
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.close{
+    font-size: 1.2rem;
+    cursor: pointer;
 }
 
 #sidebar .infos label{
@@ -101,20 +108,27 @@ header .btn-primary:hover{
     font-weight: bold;
 }
 
-#sidebar .form-check{
-    margin-top: 15px;
+#sidebar .list-group{
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
 
-#sidebar .form-check label{
-    display: flex;
-    justify-content: space-between;    
-    position: relative;
-    padding-left: 15px;
+#sidebar .list-group li{
+    border: 0;
+    padding: 10px 0 0;
 }
 
-#sidebar .form-check .count{
+#sidebar .list-group .badge-primary{
+    background-color: inherit;
     font-weight: bold;
     color: #a9aeb1;
+    font-size: .9rem;
+}
+
+#sidebar .form-check .form-check-label{
+    position: relative;
+    padding-left: 15px;
 }
 
 #sidebar .form-check label:before{
@@ -130,34 +144,65 @@ header .btn-primary:hover{
     border-radius: 50%;
 }
 
-#sidebar .form-check.answeredcheck label:before{
+#sidebar .form-check label[for="answeredcheck"]:before{
     background-color: #8dee8d;
 }
 
-#sidebar .form-check.reviewcheck label:before{
+#sidebar .form-check label[for="reviewcheck"]:before{
     background-color: #ee8bd0;
 }
 
-#sidebar .form-check.unansweredcheck label:before{
+#sidebar .form-check label[for="unansweredcheck"]:before{
     background-color: #dfe1e2;
 }
 
-#sidebar .questions{
-    margin-top: 30px;
+#sidebar .nav-pills{
+    margin: 30px 0 0;
 }
 
-#sidebar .questions .number{
-    border: 1px solid #a9aeb1;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    width: 50px;
-    height: 50px;
+#sidebar .nav-pills .nav-item{
+    width: 20%;
     text-align: center;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
 }
+
+#sidebar .nav-pills .nav-item .nav-link{
+    position: relative;
+    width: 50px;
+    height: 45px;
+    border: 1px solid #dfe1e2;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #71767a;
+}
+
+#sidebar .nav-pills .nav-item .nav-link.active{
+    border-width: 2px;
+    background-color: #f3f3f4;
+}
+
+#sidebar .nav-pills .nav-item .nav-link.check{
+    border-color: #8dee8d;
+}
+
+#sidebar .nav-pills .nav-item .nav-link.review{
+    border-color: #ee8bd0;
+}
+
+#sidebar .nav-pills .nav-item .nav-link.active:before{
+    font-family: 'Font Awesome 5 Free';
+    position: absolute;
+    top: -15px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    content: '\f0d7';
+    font-weight: 900;
+    color: #a9aeb1;
+    font-size: 1.2rem;
+}
+
 
 #breadcrumb .breadcrumb{
     background-color: transparent;
@@ -370,6 +415,6 @@ footer .suport{
         padding-bottom: 83px;
     }
     footer .copyright{
-        font-size: .6rem;
+        font-size: .5rem;
     }
 }
