@@ -40,20 +40,20 @@ header .btn-primary:hover{
     color: #000;
 }
 
-#main{
+.mainInterpreter{
     display: flex;
     width: 100%;
     align-items: stretch;
 }
 
-#test{
+.mainInterpreter .test{
     width: 100%;
     padding: 15px 0;
     min-height: 100vh;
     transition: all 0.3s;    
 }
 
-#sidebar{
+.mainInterpreter .sidebar{
     min-width: 360px;
     max-width: 360px;
     max-height: 100vh;
@@ -65,73 +65,73 @@ header .btn-primary:hover{
     color: #71767a;
 }
 
-#sidebar.active{
+.mainInterpreter .sidebar.active{
     margin-left: -360px;
 }
 
-#sidebar h2{
+.mainInterpreter .sidebar h2{
     margin: 0 0 5px;
     font-size: 1rem;
     color: #a9aeb1;
 }
 
-#sidebar h3{
+.mainInterpreter .sidebar h3{
     margin: 0;
     font-size: 1rem;
     color: #a9aeb1;
 }
 
-.infos{
+.mainInterpreter .infos{
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.close{
+.mainInterpreter .close{
     font-size: 1.2rem;
     cursor: pointer;
 }
 
-#sidebar .infos label{
+.mainInterpreter .sidebar .infos label{
     display: block;
     margin: 0;
 }
 
-#sidebar .infos #time{
+.mainInterpreter .sidebar .infos .time{
     display: inline-block;
     color: #a9aeb1;
     font-weight: bold;
 }
 
-#sidebar .infos #percentage{
+.mainInterpreter .sidebar .infos .percentage{
     display: inline-block;
     color: #a9aeb1;
     font-weight: bold;
 }
 
-#sidebar .list-group{
+.mainInterpreter .sidebar .list-group{
     padding: 0;
     margin: 0;
     border: 0;
 }
 
-#sidebar .list-group li{
+.mainInterpreter .sidebar .list-group li{
     border: 0;
     padding: 10px 0 0;
 }
 
-#sidebar .list-group .badge-primary{
+.mainInterpreter .sidebar .list-group .badge-primary{
     background-color: inherit;
     font-weight: bold;
     color: #a9aeb1;
     font-size: .9rem;
 }
 
-#sidebar .form-check .form-check-label{
+.mainInterpreter .sidebar .form-check .form-check-label{
     position: relative;
     padding-left: 15px;
 }
 
-#sidebar .form-check label:before{
+.mainInterpreter .sidebar .form-check label:before{
     content: '';
     position: absolute;
     top: 0;
@@ -144,28 +144,28 @@ header .btn-primary:hover{
     border-radius: 50%;
 }
 
-#sidebar .form-check label[for="answeredcheck"]:before{
+.mainInterpreter .sidebar .form-check label[for="answeredcheck"]:before{
     background-color: #8dee8d;
 }
 
-#sidebar .form-check label[for="reviewcheck"]:before{
+.mainInterpreter .sidebar .form-check label[for="reviewcheck"]:before{
     background-color: #ee8bd0;
 }
 
-#sidebar .form-check label[for="unansweredcheck"]:before{
+.mainInterpreter .sidebar .form-check label[for="unansweredcheck"]:before{
     background-color: #dfe1e2;
 }
 
-#sidebar .nav-pills{
+.mainInterpreter .sidebar .nav-pills{
     margin: 30px 0 0;
 }
 
-#sidebar .nav-pills .nav-item{
+.mainInterpreter .sidebar .nav-pills .nav-item{
     width: 20%;
     text-align: center;
 }
 
-#sidebar .nav-pills .nav-item .nav-link{
+.mainInterpreter .sidebar .nav-pills .nav-item .nav-link{
     position: relative;
     width: 50px;
     height: 45px;
@@ -177,20 +177,20 @@ header .btn-primary:hover{
     color: #71767a;
 }
 
-#sidebar .nav-pills .nav-item .nav-link.active{
+.mainInterpreter .sidebar .nav-pills .nav-item .nav-link.active{
     border-width: 2px;
     background-color: #f3f3f4;
 }
 
-#sidebar .nav-pills .nav-item .nav-link.check{
+.mainInterpreter .sidebar .nav-pills .nav-item .nav-link.check{
     border-color: #8dee8d;
 }
 
-#sidebar .nav-pills .nav-item .nav-link.review{
+.mainInterpreter .sidebar .nav-pills .nav-item .nav-link.review{
     border-color: #ee8bd0;
 }
 
-#sidebar .nav-pills .nav-item .nav-link.active:before{
+.mainInterpreter .sidebar .nav-pills .nav-item .nav-link.active:before{
     font-family: 'Font Awesome 5 Free';
     position: absolute;
     top: -15px;
@@ -204,62 +204,58 @@ header .btn-primary:hover{
 }
 
 
-#breadcrumb .breadcrumb{
+.mainInterpreter .breadcrumbTest .breadcrumb{
     background-color: transparent;
     padding: 0;
     margin: 0;
 }
 
-#breadcrumb .breadcrumb a{
+.mainInterpreter .breadcrumbTest .breadcrumb a{
     font-size: .9em;
     color: #71767a;
 }
 
-#breadcrumb .breadcrumb-item.active{
+.mainInterpreter .breadcrumbTest .breadcrumb-item.active{
     color: #000;
 }
 
-#timeline{
+.mainInterpreter .timeline{
     margin: 30px 0;
 }
 
-#timeline h2{
+.mainInterpreter .timeline h2{
     margin: 0;
     font-size: 1rem;
 }
 
-#timeline .btn-default{
+.mainInterpreter .timeline .btn-default{
     margin-right: 15px;
     background-color: transparent;
 }
 
-#timeline .btn-default:hover{
+.mainInterpreter .timeline .btn-default:hover{
     background-color: #f3f3f4;
 }
 
-#timeline .progress{
+.mainInterpreter .timeline .progress{
     margin: 15px 0 0;
     height: 3px;
     border-radius: 0;
 }
 
-#timeline .progress .bg-success{
+.mainInterpreter .timeline .progress .bg-success{
     background-color: #8dee8d !important;
 }
 
-#question p{
-    font-weight: bold;
-}
-
-#question figure{
+.mainInterpreter .question figure{
     margin: 15px 0;
 }
 
-#question figcaption{
+.mainInterpreter .question figcaption{
     color: #71767a;
 }
 
-#question .answers .form-check{
+.mainInterpreter .question .answers .form-check{
     background-color: #f3f3f4;  
     position: relative;
     display: block;
@@ -268,7 +264,7 @@ header .btn-primary:hover{
     border-radius: 5px;
 }
 
-#question .answers .form-check-label{
+.mainInterpreter .question .answers .form-check-label{
     padding: 15px 15px 15px 60px;
     width: 100%;
     display: block;
@@ -283,7 +279,7 @@ header .btn-primary:hover{
     border-radius: 5px;    
 }
 
-#question .answers .form-check-label:before{
+.mainInterpreter .question .answers .form-check-label:before{
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -298,7 +294,7 @@ header .btn-primary:hover{
     z-index: -1;
 }
 
-#question .answers .form-check-label:after{
+.mainInterpreter .question .answers .form-check-label:after{
     content: '';
     display: flex;
     align-items: center;
@@ -320,23 +316,23 @@ header .btn-primary:hover{
     transition: all 200ms ease-in;
 }
 
-#question .answers .form-check:nth-child(1) .form-check-label:after{
+.mainInterpreter .question .answers .form-check:nth-child(1) .form-check-label:after{
     content: 'A';
 }
 
-#question .answers .form-check:nth-child(2) .form-check-label:after{
+.mainInterpreter .question .answers .form-check:nth-child(2) .form-check-label:after{
     content: 'B';
 }
 
-#question .answers .form-check:nth-child(3) .form-check-label:after{
+.mainInterpreter .question .answers .form-check:nth-child(3) .form-check-label:after{
     content: 'C';
 }
 
-#question .answers .form-check:nth-child(4) .form-check-label:after{
+.mainInterpreter .question .answers .form-check:nth-child(4) .form-check-label:after{
     content: 'D';
 }
 
-#question .answers .form-check-input{
+.mainInterpreter .question .answers .form-check-input{
     width: 30px;
     height: 30px;
     order: 1;
@@ -350,40 +346,40 @@ header .btn-primary:hover{
     margin: 0;
 }
 
-#question .answers .form-check-input:checked ~ label{
+.mainInterpreter .question .answers .form-check-input:checked ~ label{
     color: #000;
     border-color: #dfe1e2;
 }
 
-#question .answers .form-check-input:checked ~ label:before{
+.mainInterpreter .question .answers .form-check-input:checked ~ label:before{
     transform: translate(-50%, -50%) scale3d(75, 75, 1);
     opacity: 1;
 }
 
-#question .answers .form-check-input:checked ~ label:after{
+.mainInterpreter .question .answers .form-check-input:checked ~ label:after{
     background-color: #ffff00;
     border-color: #565c65;
 }
 
-#question .review{
+.mainInterpreter .question .review{
     margin: 15px 0;
 }
 
-#controls .btn-default{
+.mainInterpreter .controls .btn-default{
     background-color: #fff;
 }
 
-#controls .btn-default.menu{
+.mainInterpreter .controls .btn-default.menu{
     border: 1px solid #dfe1e2;
     min-width: 140px;
 }
-#controls .btn-default.menu i{
+.mainInterpreter .controls .btn-default.menu i{
     color: #565c65;
     font-size: .9rem;
     margin-left: 15px;
 }
 
-#controls .btn-default:hover{
+.mainInterpreter .controls .btn-default:hover{
     background-color: #f3f3f4;
 }
 
